@@ -1,8 +1,8 @@
 //DOM elements
 
+const resultEl = document.getElementById("result");
 const lengthRange = document.getElementById("lengthRange");
 const lengthDisplayEl = document.getElementById("lengthDisplay");
-const resultEl = document.getElementById("result");
 const upperCaseEl = document.getElementById("Uppercase");
 const lowerCaseEl = document.getElementById("lowercase");
 const numbersEl = document.getElementById("numbers");
@@ -48,7 +48,7 @@ function randomSymbol() {
 }
 
 function generatePassword(lower, upper, number, symbol, length) {
-  let generatedPassword = "";
+  let passwordContainer = "";
   const tegnArray = [];
 
   if (lower) {
@@ -68,22 +68,21 @@ function generatePassword(lower, upper, number, symbol, length) {
     const typeTegn = tegnArray[Math.floor(Math.random() * tegnArray.length)];
     switch (typeTegn) {
       case "lower":
-        generatedPassword += randomLowerCase();
+        passwordContainer += randomLowerCase();
         break;
       case "upper":
-        generatedPassword += randomUpperCase();
+        passwordContainer += randomUpperCase();
         break;
       case "number":
-        generatedPassword += randomNumber();
+        passwordContainer += randomNumber();
         break;
       case "symbol":
-        generatedPassword += randomSymbol();
+        passwordContainer += randomSymbol();
         break;
     }
   }
   if (tegnArray.length === 0) {
     return "";
   }
-  const finalPassword = generatedPassword.slice(0, length);
-  return finalPassword;
+  return passwordContainer.slice(0, length);
 }
