@@ -104,14 +104,14 @@ h2 {
   text-align: center;
 }
 .container {
-  background-color: rgb(97, 89, 133);
+  background-color: rgb(0, 71, 119);
   box-shadow: 0px 2px 10px rgb(107, 107, 107);
   padding: 20px;
   width: 350px;
   max-width: 100%;
 }
 .result-container {
-  background-color: rgb(46, 11, 103);
+  background-color: rgb(25, 119, 163);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -124,7 +124,7 @@ h2 {
 
 .btn {
   border: none;
-  background-color: rgb(46, 11, 103);
+  background-color: rgb(25, 119, 163);
   color: azure;
   font-size: 16px;
   padding: 8px 12px;
@@ -151,6 +151,6 @@ h2 {
 }
 
 input[type="range"] {
-  width: 300px;
+  width: 350px;
 }
 /*     ------------------------              */
