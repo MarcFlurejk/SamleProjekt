@@ -26,6 +26,7 @@
   background-color: #0491aa;
   color: white;
 }
+
 .bck-nxt {
   display: flex;
   justify-content: center;
@@ -69,6 +70,7 @@ body {
   justify-content: center;
   gap: 50px;
 }
+
 .icon-images:hover {
   transform: scale(1.15);
 }
@@ -76,6 +78,7 @@ body {
 .img1 {
   position: relative;
 }
+
 .img1text {
   box-sizing: border-box;
   width: 100%;
@@ -87,11 +90,13 @@ body {
   margin-top: 60px;
   color: white;
 }
+
 .img1text {
   visibility: none;
   opacity: 0;
   transition: opacity 0.3s;
 }
+
 .img1:hover .img1text {
   visibility: visible;
   opacity: 1;
@@ -103,6 +108,7 @@ h2 {
   margin: 10px 0 20px;
   text-align: center;
 }
+
 .container {
   background-color: rgb(0, 71, 119);
   box-shadow: 0px 2px 10px rgb(107, 107, 107);
@@ -110,6 +116,7 @@ h2 {
   width: 350px;
   max-width: 100%;
 }
+
 .result-container {
   background-color: rgb(25, 119, 163);
   display: flex;
@@ -131,16 +138,19 @@ h2 {
   display: block;
   width: 100%;
 }
+
 #result {
   word-wrap: break-word;
   max-width: 100%;
 }
+
 .setting {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 15px 0;
 }
+
 .settings {
   margin-bottom: 30px;
 }
@@ -153,4 +163,5 @@ h2 {
 input[type="range"] {
   width: 350px;
 }
+
 /*     ------------------------              */
